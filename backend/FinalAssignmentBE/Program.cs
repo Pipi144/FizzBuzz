@@ -12,14 +12,15 @@ var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(4444));
 
 // Environment Variables for CORS
-var allowedOrigin = builder.Configuration["FrontendUrl"] ?? "http://localhost:3000";
+var allowedOrigins = builder.Configuration["FrontendUrl"]?.Split(',') ?? new[] { "http://localhost:3000" };
+
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(MyAllowSpecificOrigins, policy =>
-        policy.WithOrigins(allowedOrigin)
-            .AllowAnyHeader()
-            .AllowAnyMethod()
-            .AllowCredentials());
+    options.AddPolicy("_myAllowSpecificOrigins", policy =>
+        policy.WithOrigins(allowedOrigins) // Support both Docker and local URLs
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials());
 });
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
