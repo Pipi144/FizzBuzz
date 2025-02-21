@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import { Label } from "../ui/label";
 import { useGameContext } from "@/Providers/GameProvider";
 import RuleItemDisplay from "../RuleItemDisplay/RuleItemDisplay";
@@ -11,7 +11,7 @@ const AddGameRule = () => {
   const [newNumber, setNewNumber] = useState("");
   const [newReplaceWord, setNewReplaceWord] = useState("");
   const { addGamePayload, setAddGamePayload } = useGameContext();
-
+  const addRuleNumRef = useRef<HTMLInputElement>(null);
   const onRemoveRule = useCallback((index: number) => {
     setAddGamePayload(
       produce((draft) => {
@@ -19,11 +19,12 @@ const AddGameRule = () => {
       })
     );
   }, []);
+
   const onSubmitNewRule = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const trimmedNumber = newNumber.trim();
     const trimmedWord = newReplaceWord.trim();
-
+    // trim word and number
     if (!trimmedNumber || !trimmedWord) {
       toast({
         title: "Fields are required",
@@ -52,6 +53,8 @@ const AddGameRule = () => {
     );
     setNewNumber("");
     setNewReplaceWord("");
+    // focus on rule number input for ux
+    addRuleNumRef.current?.focus();
   };
 
   return (
@@ -71,6 +74,7 @@ const AddGameRule = () => {
               Math.abs(Math.floor(Number(e.target.value))).toString()
             )
           }
+          ref={addRuleNumRef}
         />
         <Input
           placeholder="Enter replaced word"
