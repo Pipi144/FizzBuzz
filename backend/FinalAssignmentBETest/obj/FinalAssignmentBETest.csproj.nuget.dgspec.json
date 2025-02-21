@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBETest/FinalAssignmentBETest.csproj": {}
+    "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBETest/FinalAssignmentBETest.csproj": {}
   },
   "projects": {
-    "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBE/FinalAssignmentBE.csproj": {
+    "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBE/FinalAssignmentBE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBE/FinalAssignmentBE.csproj",
+        "projectUniqueName": "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBE/FinalAssignmentBE.csproj",
         "projectName": "FinalAssignmentBE",
-        "projectPath": "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBE/FinalAssignmentBE.csproj",
+        "projectPath": "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBE/FinalAssignmentBE.csproj",
         "packagesPath": "/Users/doxle/.nuget/packages/",
-        "outputPath": "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBE/obj/",
+        "outputPath": "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBE/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/doxle/.nuget/NuGet/NuGet.Config"
@@ -128,14 +128,14 @@
         }
       }
     },
-    "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBETest/FinalAssignmentBETest.csproj": {
+    "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBETest/FinalAssignmentBETest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBETest/FinalAssignmentBETest.csproj",
+        "projectUniqueName": "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBETest/FinalAssignmentBETest.csproj",
         "projectName": "FinalAssignmentBETest",
-        "projectPath": "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBETest/FinalAssignmentBETest.csproj",
+        "projectPath": "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBETest/FinalAssignmentBETest.csproj",
         "packagesPath": "/Users/doxle/.nuget/packages/",
-        "outputPath": "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBETest/obj/",
+        "outputPath": "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBETest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/doxle/.nuget/NuGet/NuGet.Config"
@@ -150,8 +150,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBE/FinalAssignmentBE.csproj": {
-                "projectPath": "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBE/FinalAssignmentBE.csproj"
+              "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBE/FinalAssignmentBE.csproj": {
+                "projectPath": "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBE/FinalAssignmentBE.csproj"
               }
             }
           }

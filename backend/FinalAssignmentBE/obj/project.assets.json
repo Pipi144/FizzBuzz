@@ -9839,11 +9839,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBE/FinalAssignmentBE.csproj",
+      "projectUniqueName": "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBE/FinalAssignmentBE.csproj",
       "projectName": "FinalAssignmentBE",
-      "projectPath": "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBE/FinalAssignmentBE.csproj",
+      "projectPath": "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBE/FinalAssignmentBE.csproj",
       "packagesPath": "/Users/doxle/.nuget/packages/",
-      "outputPath": "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBE/obj/",
+      "outputPath": "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBE/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/doxle/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+yi7xSPFMwo=",
+  "dgSpecHash": "wG7+gOviT5M=",
   "success": true,
-  "projectFilePath": "/Users/doxle/Desktop/FinalAssignmentBE/FinalAssignmentBETest/FinalAssignmentBETest.csproj",
+  "projectFilePath": "/Users/doxle/Desktop/fizzbuzz/backend/FinalAssignmentBETest/FinalAssignmentBETest.csproj",
   "expectedPackageFiles": [
     "/Users/doxle/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/doxle/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",

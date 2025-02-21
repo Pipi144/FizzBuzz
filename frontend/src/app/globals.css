@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap");
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+.custom-scrollbar {
+  @apply !scrollbar-thin !scrollbar-thumb-slate-200 !scrollbar-track-transparent;
+}
+
+.btn-light-bg {
+  @apply bg-white text-black hover:bg-white hover:text-black font-concert text-base;
+}
+
+.btn-dark-bg {
+  @apply bg-slate-950 text-white hover:bg-slate-500 hover:text-gray-300 font-concert text-base;
+}
+.error-text {
+  @apply text-red-500 text-xs font-concert;
+}

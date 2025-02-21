@@ -1,0 +1,48 @@
+# -------------------------------
+# General ignores
+# -------------------------------
+node_modules/
+.env
+.DS_Store
+*.log
+.vscode/
+.idea/
+dist/
+build/
+
+# -------------------------------
+# Frontend (Next.js) specific
+# -------------------------------
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/.env.production
+frontend/.env.development
+
+# -------------------------------
+# Backend (.NET) specific
+# -------------------------------
+backend/bin/
+backend/obj/
+backend/.vs/
+backend/.vscode/
+backend/*.user
+backend/*.suo
+backend/*.csproj.user
+backend/*.pidb
+backend/*.sln.docstates
+backend/.env
+
+# -------------------------------
+# Docker
+# -------------------------------
+docker-compose.override.yml
+*.dockerfile
+*.tar
+
+# -------------------------------
+# OS specific
+# -------------------------------
+Thumbs.db
+ehthumbs.db
+desktop.ini
