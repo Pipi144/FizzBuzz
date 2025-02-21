@@ -1,0 +1,34 @@
+﻿services:
+  finalassignmentbe:
+    image: finalassignmentbe
+    build:
+      context: .
+      dockerfile: FinalAssignmentBE/Dockerfile
+      target: final
+    ports:
+      - "4444:4444"
+    environment:
+      - FrontendUrl=http://localhost:3000
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=FinalBE;Username=postgres;Password=doxle
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5438:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=FinalBE
+      - POSTGRES_PASSWORD=doxle
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+volumes:
+  db-data:
