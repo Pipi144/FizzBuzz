@@ -21,7 +21,7 @@ public class GameQuestionRepository : IGameQuestionRepository
         {
             var gameQuestion = await _context.GameQuestions.Include(q => q.GameAttempt).ThenInclude(a => a.Game)
                 .ThenInclude(g => g.GameRules)
-                .FirstOrDefaultAsync(q => q.Id == id);
+                .SingleOrDefaultAsync(q => q.Id == id);
             return gameQuestion;
         }
         catch (Exception e)

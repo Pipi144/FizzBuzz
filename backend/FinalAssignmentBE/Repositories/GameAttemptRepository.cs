@@ -37,7 +37,7 @@ public class GameAttemptRepository : IGameAttemptRepository
             var gameAttempt = await _dbContext.GameAttempts
                 .Include(g => g.Game) // Ensures Game is loaded
                 .Include(g => g.GameQuestions) // Ensures Questions are loaded
-                .FirstOrDefaultAsync(g => g.AttemptId == id); // `.FindAsync(id)` doesn't work well with relationships
+                .SingleOrDefaultAsync(g => g.AttemptId == id); // `.FindAsync(id)` doesn't work well with relationships
             return gameAttempt;
         }
         catch (Exception e)

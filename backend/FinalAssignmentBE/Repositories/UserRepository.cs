@@ -68,7 +68,7 @@ public class UserRepository : IUserRepository
     {
         try
         {
-            var query = _context.Users.AsQueryable();
+            var query = _context.Users.AsQueryable().AsNoTracking();
 
             if (filter != null)
             {
@@ -95,7 +95,7 @@ public class UserRepository : IUserRepository
         {
             if (id < 0)
                 throw new ArgumentException("User Id cannot be negative");
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserId == id);
+            var user = await _context.Users.SingleOrDefaultAsync(u => u.UserId == id);
 
             if (user == null)
                 throw new KeyNotFoundException("User does not exist");

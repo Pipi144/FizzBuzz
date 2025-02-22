@@ -65,7 +65,7 @@ const EditGameRule = ({ game }: Props) => {
   };
 
   return (
-    <div className="mt-4 w-full flex-wrap overflow-auto">
+    <div className="mt-4 w-full flex-wrap overflow-auto flex-shrink">
       <Label>Game rules</Label>
       <div className="flex items-center justify-between w-full max-w-screen-sm  my-4 flex-wrap border-[1px] border-solid border-slate-400 px-2 rounded-sm">
         <Input

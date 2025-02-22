@@ -49,7 +49,7 @@ public class GameRuleRepository : IGameRuleRepository
     {
         try
         {
-            var result = await _context.GameRules.FindAsync(id);
+            var result = await _context.GameRules.SingleOrDefaultAsync(r => r.RuleId == id);
 
             return result;
         }

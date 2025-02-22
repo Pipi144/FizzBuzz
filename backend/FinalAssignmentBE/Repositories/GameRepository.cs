@@ -21,7 +21,7 @@ public class GameRepository : IGameRepository
     {
         try
         {
-            var query = _context.Games.AsQueryable();
+            var query = _context.Games.AsQueryable().AsNoTracking();
 
             if (getGamesParams != null)
             {
