@@ -3719,6 +3719,16 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "SBShared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/SBShared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SBShared.dll": {}
+        }
       }
     }
   },
@@ -9813,6 +9823,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "SBShared/1.0.0": {
+      "type": "project",
+      "path": "../SBShared/SBShared.csproj",
+      "msbuildProject": "../SBShared/SBShared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9830,6 +9845,7 @@
       "NUnit.Analyzers >= 4.6.0",
       "NUnit3TestAdapter >= 4.6.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.2",
+      "SBShared >= 1.0.0",
       "Swashbuckle.AspNetCore >= 7.2.0"
     ]
   },
@@ -9857,7 +9873,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/doxle/Desktop/fizzbuzz/backend/SBShared/SBShared.csproj": {
+              "projectPath": "/Users/doxle/Desktop/fizzbuzz/backend/SBShared/SBShared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -3927,6 +3927,7 @@
           "NUnit": "4.3.2",
           "NUnit3TestAdapter": "4.6.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.2",
+          "SBShared": "1.0.0",
           "Swashbuckle.AspNetCore": "7.2.0"
         },
         "compile": {
@@ -3938,6 +3939,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "SBShared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/SBShared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SBShared.dll": {}
+        }
       }
     }
   },
@@ -10249,6 +10260,11 @@
       "type": "project",
       "path": "../FinalAssignmentBE/FinalAssignmentBE.csproj",
       "msbuildProject": "../FinalAssignmentBE/FinalAssignmentBE.csproj"
+    },
+    "SBShared/1.0.0": {
+      "type": "project",
+      "path": "../SBShared/SBShared.csproj",
+      "msbuildProject": "../SBShared/SBShared.csproj"
     }
   },
   "projectFileDependencyGroups": {

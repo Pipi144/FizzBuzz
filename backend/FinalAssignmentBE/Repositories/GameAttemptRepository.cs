@@ -6,6 +6,7 @@ namespace FinalAssignmentBE.Repositories;
 
 public class GameAttemptRepository : IGameAttemptRepository
 {
+
     private readonly FinalAssignmentDbContext _dbContext;
     private readonly ILogger<GameAttemptRepository> _logger;
 
